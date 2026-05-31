@@ -216,3 +216,31 @@ let arri=[1,2,3,4,5,6,7];
 arri.forEach((val)=>{
     console.log(val*val);
 });
+
+//Filter Array
+
+let scores =[87,93,64,99,86];
+
+let  toppers=scores.filter((val) => {
+    return val>90;
+});
+
+console.log(toppers);
+
+let m=prompt("Enter a number m : ");
+let numarr=[];
+for(let i=1;i<=m;i++){
+    numarr.push(i);
+}
+
+let ansi=numarr.reduce ((acc,curr)=>{
+    return acc+curr;
+},0);
+
+console.log(ansi);
+
+let ansi2=numarr.reduce ((acc,curr)=>{
+    return acc*curr;
+},1);
+
+console.log(ansi2);
