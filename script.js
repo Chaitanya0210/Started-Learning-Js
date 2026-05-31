@@ -143,3 +143,76 @@ console.log(specialstr);
 let fName=prompt("Enter Your Full Name: ");
 let userName="@"+fName+fName.length;
 console.log(userName);
+
+
+//Arrays
+
+let marks =[85,97,44,37,76,60];
+let avg=0;
+for(let el of marks){
+    avg+=el;
+}
+
+console.log(avg/marks.length);
+
+let prices=[250,645,300,900,50];
+for(let i=0;i<prices.length;i++){
+    prices[i]=(prices[i]/10)*9;
+}
+
+console.log(prices);
+
+let companies=["Bloomberg", "Microsoft", "Uber" , "Google" , "IBM" , "Netflix"];
+
+companies.splice(0,1);
+companies.splice(1,1,"ola");
+companies.push("Amazon");
+
+console.log(companies);
+
+//functions
+
+function sumi(x,y){
+    return x+y;
+}
+
+let value=sumi(3,4);
+
+console.log(value);
+
+
+function vowels(s){
+    s=s.toLowerCase();
+    let cnt=0;
+    for(let char of s){
+        if(char==='a' || char==='e' || char==='i' || char==='o' || char==='u'){
+            cnt++;
+        }
+    }
+    return cnt;
+}
+
+let ans=vowels("chaitanya");
+console.log(ans);
+
+const arrow = (s) =>{
+   s= s.toUpperCase();
+    let cnt=0;
+    for(let char of s){
+        if(char==='A' || char==='E' || char==='I' || char==='O' || char==='U'){
+            cnt++;
+        }
+    }
+    return cnt;
+}
+
+let arans=arrow("ChaitanyA");
+console.log(arans);
+
+//for each loop
+
+let arri=[1,2,3,4,5,6,7];
+
+arri.forEach((val)=>{
+    console.log(val*val);
+});
